@@ -1,0 +1,24 @@
+[:page partOf="prova" args="List<User> users"]
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+
+    <table border="1px" cellspacing="0">
+      <tr>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Username</th>
+      </tr>
+    [:for user in users]
+      <tr>
+        <td>[=user.fName]</td>
+        <td>[=user.lName]</td>
+        <td>[=user.username]</td>
+      </tr>
+    [/for]
+    </table>
+  </body>
+</html>
